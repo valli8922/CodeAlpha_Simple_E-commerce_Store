@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    
+
+    <div class="logo">
+        ShopEasy
+    </div>
+    <div class="search-box">
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search Products..."
+        onkeyup="searchProducts()"
+    >
+
+</div>
+<button class="dark-btn"
+onclick="toggleDarkMode()">
+
+    🌙
+
+</button>
+
+    <div class="cart-link">
+        <a href="cart.html">🛒 Cart</a>
+    </div>
+    
+
+</nav>
+
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h1>Big Billion Sale 🔥</h1>
+
+        <p>Best Deals On Electronics & Fashion</p>
+
+    </div>
+
+</section>
+
+
+<h1 class="product-heading">Trending Products</h1>
+<div class="categories">
+
+    <button onclick="filterProducts('all')">All</button>
+
+    <button onclick="filterProducts('watch')">Watches</button>
+
+    <button onclick="filterProducts('shoes')">Shoes</button>
+
+    <button onclick="filterProducts('phone')">Phones</button>
+
+    <button onclick="filterProducts('clothes')">Clothes</button>
+
+</div>
+<div class="products" id="products"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
